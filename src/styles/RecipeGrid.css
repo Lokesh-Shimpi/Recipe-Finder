@@ -1,0 +1,25 @@
+/* ====== GRID LAYOUT ====== */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+  }
+  
+  /* ====== EMPTY STATE ====== */
+  .no-recipes {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px dashed #ddd;
+  }
+  
+  /* ====== RESPONSIVE GRID ====== */
+  @media (max-width: 768px) {
+    .recipe-grid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+  }
+  

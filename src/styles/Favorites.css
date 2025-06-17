@@ -1,0 +1,40 @@
+.favorites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .favorites-container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  .favorite-item {
+    position: relative;
+  }
+  
+  .remove-favorite {
+    width: 100%;
+    padding: 8px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+    top: -4px;
+  }
+  
+  .remove-favorite:hover {
+    background-color: #f5c6cb;
+  }
+  
